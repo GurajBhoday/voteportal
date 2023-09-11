@@ -1,7 +1,9 @@
 import axios from "axios"
 import { getToken } from "./auth"
 
-export const BASE_URL ="http://localhost:8181/api/"
+//export const BASE_URL ="http://localhost:8181/api/"
+
+export const BASE_URL ="https://userlog-backend.vercel.app/api/"
 
 export const privateAxios = axios.create({
     baseURL:BASE_URL

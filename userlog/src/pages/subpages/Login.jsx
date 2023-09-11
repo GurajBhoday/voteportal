@@ -18,7 +18,7 @@ const Login = () => {
       console.log(data)
       loginUserAuth(data)
       toast.success("Logged In Successfully !!!")
-      navigate("/dashboard")
+      navigate("/dashboard/category")
     }).catch(err=>{
       console.log(err)
       toast.error(""+err?.response?.data?.message)
