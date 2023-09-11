@@ -1,0 +1,114 @@
+.bg-gray{
+  background-color: #fafafa;
+}
+
+.bg-dash{
+  background: #FAFAFB
+}
+
+.login-signup-left h1{
+  color: #1E1E1E;
+font-family: Inter;
+font-size: 80px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.login-signup-left p{
+  color: #1E1E1E;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.login-signup-button{
+  border-radius: 30px;
+  border: 1px solid rgba(30, 30, 30, 0.20);
+  display: flex;
+height: 45px;
+padding: 0px 20px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+}
+
+.bg-blue{
+  background: #3792DE;
+}
+
+.text-blue{
+  color:#3792DE;
+}
+
+.active{
+  border-radius: 30px;
+  
+  color: #ffffff;
+  background: #3792DE;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  display: flex;
+
+height: 45px;
+align-items: flex;
+}
+
+.login-signup-button:hover{
+  border-radius: 30px;
+  
+  color: #ffffff;
+  background: #3792DE;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  display: flex;
+
+height: 45px;
+align-items: flex;
+
+}
+
+.login-signup-left small{
+  color: rgba(19, 18, 18, 0.40);
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.login-box h2{
+  color: #1E1E1E;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.login-box button{
+  display: flex;
+/* width: 359px; */
+padding: 12px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.btn-google{
+  background-color: #3792DE;
+  color: white;
+}
+
+.login-box{
+  display: inherit;
+}
+
+.sidebar-active{
+  background:linear-gradient(to right,#ACA9FF, #ACA9FF00)
+}
