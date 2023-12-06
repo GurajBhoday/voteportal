@@ -9,16 +9,7 @@ const Category = () => {
         <div className='w-full flex justify-between'>
             <h1 className='text-[24px]'>Dashboard</h1>
             <div className='flex space-x-3'>
-                <div className='bg-white p-2'>
-                <select name="" id="" className='bg-white'>
-                    <option value="">10-06-2021</option>
-                </select>
-                </div>
-                <div className='bg-white p-2'>
-                <select name="" id="" className='bg-white'>
-                    <option value="">10-10-2021</option>
-                </select>
-                </div>
+                
             </div>
         </div>
         <div className='flex justify-between'>
@@ -29,7 +20,7 @@ const Category = () => {
                     </div>
                     <div className=''>
                         <h1 className='text-[22px] font-[800]'>178+</h1>
-                        <p>Save Products</p>
+                        <p>Total Scans</p>
                     </div>
                 </div>
             </div>
@@ -41,7 +32,7 @@ const Category = () => {
                     </div>
                     <div className=''>
                         <h1 className='text-[22px] font-[800]'>20+</h1>
-                        <p>Stock Products</p>
+                        <p>Current Month Scans</p>
                     </div>
                 </div>
             </div>
@@ -53,46 +44,13 @@ const Category = () => {
                     </div>
                     <div className=''>
                         <h1 className='text-[22px] font-[800]'>190+</h1>
-                        <p>Sales Products</p>
+                        <p>Active Dynamic QR Codes</p>
                     </div>
                 </div>
             </div>
 
-            <div className='bg-white p-5 rounded w-[276px]'>
-                <div className='flex space-x-4'>
-                    <div className='w-[60px] h-[60px] bg-[#5B93FF] bg-opacity-10 rounded-full flex justify-center items-center'>
-                        <img className='w-[24px] h-[24px]' src={Heart} alt="" />
-                    </div>
-                    <div className=''>
-                        <h1 className='text-[22px] font-[800]'>12+</h1>
-                        <p>Job Application</p>
-                    </div>
-                </div>
-            </div>
 
-            <div className='bg-white p-5 rounded w-[276px]'>
-                <div className='flex space-x-4'>
-                    <div className='w-[60px] h-[60px] bg-[#5B93FF] bg-opacity-10 rounded-full flex justify-center items-center'>
-                        <img className='w-[24px] h-[24px]' src={Heart} alt="" />
-                    </div>
-                    <div className=''>
-                        <h1 className='text-[22px] font-[800]'>12+</h1>
-                        <p>Job Application</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className='bg-white p-5 rounded w-[276px]'>
-                <div className='flex space-x-4'>
-                    <div className='w-[60px] h-[60px] bg-[#5B93FF] bg-opacity-10 rounded-full flex justify-center items-center'>
-                        <img className='w-[24px] h-[24px]' src={Heart} alt="" />
-                    </div>
-                    <div className=''>
-                        <h1 className='text-[22px] font-[800]'>12+</h1>
-                        <p>Job Application</p>
-                    </div>
-                </div>
-            </div>
+            
 
         </div>
 

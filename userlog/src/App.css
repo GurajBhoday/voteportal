@@ -9,7 +9,7 @@
 .login-signup-left h1{
   color: #1E1E1E;
 font-family: Inter;
-font-size: 80px;
+font-size: 50px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -111,4 +111,48 @@ gap: 10px;
 
 .sidebar-active{
   background:linear-gradient(to right,#ACA9FF, #ACA9FF00)
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the card */
+.card {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form elements */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the button */
+.btn-primary {
+  background-color: #000000;
+  color: #e20000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.h4 {
+  margin-top: 0; /* Remove default margin */
+}
+.w3-container w3-blue{
+  align-items: center;
 }

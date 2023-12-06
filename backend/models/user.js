@@ -10,7 +10,10 @@ const userModel = mongoose.Schema({
         required:true,
         default: "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg"
     },
-    token:String
+    token:String,
+    
+    template: { type: String, default: ""},
+    profileData: {type: Object, default: {} },
 },{
     timestamps:true
 });

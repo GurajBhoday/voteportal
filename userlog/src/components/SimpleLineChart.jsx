@@ -1,27 +1,18 @@
 import * as React from 'react';
-import { LineChart } from '@mui/x-charts/LineChart';
-
-const uData = [4000, 3000, 2000, 2780, 1890, 2390, 3490];
-const pData = [2400, 1398, 9800, 3908, 4800, 3800, 4300];
-const xLabels = [
-  'Page A',
-  'Page B',
-  'Page C',
-  'Page D',
-  'Page E',
-  'Page F',
-  'Page G',
-];
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import VCard from '../pages/VCard';
 
 export default function SimpleLineChart() {
   return (
-    <LineChart
-      
-      series={[
-        { data: pData, label: 'pv' },
-        { data: uData, label: 'uv' },
-      ]}
-      xAxis={[{ scaleType: 'point', data: xLabels }]}
-    />
+
+    <div className=" items-center">
+    <h1 className="text-24px">Create your voting card</h1>
+    <Link to="/dashboard/vcard" className='flex justify-end'>
+      <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-3  rounded">
+        Create Card <span>&#43;</span>
+      </button>
+    </Link>
+  </div>
+
   );
 }

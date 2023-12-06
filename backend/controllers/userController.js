@@ -77,5 +77,47 @@ const updateUser = asyncHandler(async(req,res)=>{
     res.json(user)
 })
 
+const updateTemplate = asyncHandler(async (req, res) => {
+    const { template } = req.body;
+    const user = req.user;
 
-module.exports ={registerUser,authUser,logOut}
+    if(!user) {
+        res.status(403);
+        throw new Error("User not authorized");
+
+    }
+
+    try {
+        user.selectedTemplate = template;
+        await user.save();
+
+        res.status(202).json({ message: "Update successful"});
+    }catch(error) {
+        res.status(501);
+        throw new Error("template shit didnt work");
+    }
+})
+ 
+//Update user's profile data
+const updateProfileData = asyncHandler(async (req, res)=>{
+    const { firstName, lastName, company, pic } = req.body;
+    const user = req.user;
+
+    if(!user) {
+        res.status(403);
+        throw new Error("User not authorized");
+    }
+     try{
+        user.firstName = firstName;
+        user.lastName = lastName;
+        user.company = company;
+        user.pic = pic;
+        await user.save()
+
+        res.status(203).json({ message: "Profile data updated successfully"});
+     }catch(error) {
+        res.status(502);
+        throw new Error("Failed to update profile data")
+     }
+})
+module.exports ={registerUser,authUser,logOut, updateTemplate, updateProfileData}

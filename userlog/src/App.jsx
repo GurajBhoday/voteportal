@@ -16,6 +16,8 @@ import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Profile from './pages/subpages/Profile'
 import Category from './pages/subpages/Category'
+import VCard from './pages/VCard'
+import Template1 from './components/Templates/Template1'
 
 
 function App() {
@@ -32,8 +34,11 @@ function App() {
         <Route element={<Dashboard />} path='dashboard' >
           <Route element={<Profile />} path='profile' />
           <Route element={<Category />} path='category' />
+          <Route element={<VCard />} path='vcard'/>
+        </Route>
+        <Route element={<Template1 />} path="/template1" >
 
-        </Route> 
+        </Route>
       </Routes>
     </BrowserRouter>
   )

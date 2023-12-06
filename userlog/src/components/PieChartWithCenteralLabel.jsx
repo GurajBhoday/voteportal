@@ -35,7 +35,7 @@ function PieCenterLabel({ children }) {
 const PieChartWithCenteralLabel = () => {
   return (
     <PieChart series={[{ data, innerRadius: 80 }]} {...size}>
-      <PieCenterLabel>Center label</PieCenterLabel>
+      <PieCenterLabel>Card used</PieCenterLabel>
     </PieChart>
   )
 }
